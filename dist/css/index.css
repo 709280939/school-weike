@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* header部分 */
+
+
+/* footer部分 */
+
+
+/* sign-box部分 */
+.sign-box {
+  background-color: #fff;
+  min-width: 200px;
+}
+
+.iconfont {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 8px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+#close-icon {
+  font-size: 14px !important;
+  padding-right: 8px;
+}
+
+#password-show {
+  font-size: 22px !important;
+  padding-right: 10px;
+}
+
+.sign-box h4 ,
+.sign-box h5 {
+  text-align: center;
+  color: #787878;
+  margin: 0;
+}
+.sign-box h4 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.sign-box h5 {
+  font-weight: 14px; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  border-top: 1px solid #eeeeee;
+}
+
+.input-box input {
+  width: 100%;
+  height: 48px;
+  line-height: 18px;
+  padding: 15px 8px;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.input-box label {
+  position: absolute;
+}
+
+.img-code {
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.button-box {
+  border-top: 1px solid #eeeeee;
+  padding: 10px 10px;
+}
+
+.button-box button {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #0077d9;
+  color: #fff;
+  line-height: 1;
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+}
+.sign-in-bottom {
+  position: relative;
+  padding: 10px;
+  color: #787878;
+}
+
+.sign-in-bottom label {
+  font-weight: normal;
+  padding-right: 10px;
+}
+
+.check-input {
+  vertical-align: -1px;
+  margin-right: 5px !important;
+}
+
+#to-sign-up {
+  position: absolute;
+  top: 10px;
+  right:10px;
+}
+
+@media  (max-width: 500px) {
+  .sign-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    opacity: 0.5;
+  }
+
+  .sign-box {
+    width: 300px;
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 12vh;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.3);
+    border-radius: 5px;
+  }
+}
+@font-face {font-family: "iconfont";
+  src: url(assets./fonts/iconfont.eot); /* IE9*/
+  src: url(assets./fonts/iconfont.eot#iefix) format('embedded-opentype'), 
+  url(assets./fonts/iconfont.woff) format('woff'), 
+  url(assets./fonts/iconfont.ttf) format('truetype'), 
+  url(assets./fonts/iconfont.svg#iconfont) format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-eye:before { content: "\E7A0"; }
+
+.icon-X:before { content: "\E648"; }
+
