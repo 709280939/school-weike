@@ -14,7 +14,7 @@ module.exports = "<div>list</div>";
 
 /***/ }),
 
-/***/ 37:
+/***/ 35:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(0);
@@ -23,4 +23,4 @@ $("header").after(list_str);
 
 /***/ })
 
-},[37]);
+},[35]);

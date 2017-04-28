@@ -1,0 +1,142 @@
+@import url(../common.less);
+.register {
+  .container {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+.input-text {
+  height: 32px;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+  &:focus {
+    border-color: #467EAD;
+  }
+}
+.select {
+  border-color: @gray - #222222;
+  padding: 4px 6px 6px 4px;
+  outline: none;
+  font-size: 14px;
+  border-radius: 3px;
+  &:focus {
+    border-color: #467EAD;
+  }
+  option {
+    font-size: 14px;
+  }
+}
+.label {
+  font-size: 16px;
+  padding-right: 20px;
+  padding-top: 4px;
+  font-weight: normal;
+}
+
+
+
+
+form {
+  padding-top: 30px;
+  .user-img-m {
+    @media (max-width:768px) {
+      .clearfix;
+    }
+    h4 {
+      padding-left: 8px;
+      font-size: 15px;
+      font-weight: bold;
+      color: @dark - #666666;
+      @media (min-width:768px) {
+        display: none;
+      }
+    }
+    .user-img {
+      @media (min-width:768px) {
+        float: left;
+        left: 30px;
+      }
+      @media (max-width:768px) {
+        float: left;
+        bottom: 20px;
+      }
+      position: relative;
+      width: 160px;
+      height: 160px;
+      border-radius: 5px;
+      .img-mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .4;
+        border-radius: 5px;
+      }
+      i {
+        position: absolute;
+        left: 60px;
+        top: 35px;
+        font-size: 40px;
+        color: @white;
+      }
+      h5 {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+        font-size: 16px;
+        color: @white;
+        text-align: center;
+      }
+      input[type="file"] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        width: 160px;
+        height: 160px;
+      }
+    }
+  }
+  .user-text {
+    overflow: hidden;
+     @media (min-width:768px) {
+      margin-left: 230px;
+    }
+    .input-box {
+      @media (max-width:768px) {
+        padding: 10px 10px;
+      }
+      @media (min-width:768px) {
+        padding: 20px 30px;
+      }
+      border-bottom: 1px solid @borderColor;
+      h4 {
+        font-size: 15px;
+        font-weight: bold;
+        color: @dark - #666666;
+      }
+      input[type="text"] {
+        .input-text;
+        border: 1px solid @borderColor - #111111;
+      }
+      select {
+        .select;
+      }
+      .sex {
+        input {
+          margin: 2px 6px 0 0;
+        }
+        label {
+          .label;
+        }
+      }
+    }
+    .border-top {
+      border-top: 1px solid @borderColor;
+    }
+  }
+}

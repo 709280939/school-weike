@@ -10,7 +10,7 @@ module.exports = {
   context:path.resolve(__dirname,"src"),
   entry: {
     index: "./js/page/index.js",         //首页入口
-    list: "./js/page/list.js",         //搜索页入口
+    search: "./js/page/search.js",         //搜索页入口
     release: "./js/page/release.js",     //发布项目页入口
     register: "./js/page/register.js",   //信息完善页入口
     user: "./js/page/user.js",           //用户资料入口
@@ -38,7 +38,7 @@ module.exports = {
       {
         //less加载器
         test:/\.less$/,
-        loader: ExtractTextPlugin.extract({fallback:"style-loader",use:"css-loader!postcss-loader!less-loader"})
+        loader: "style-loader!css-loader!postcss-loader!less-loader"
       },
       {
         //html模板加载器
@@ -70,13 +70,13 @@ module.exports = {
       chunks: ["vendors","index"],      //需要加入的js文件
       title: "index"
     }),
-    //list页面的配置
+    //search页面的配置
     new HtmlWebpackPlugin({
-      filename: "list.html",
+      filename: "search.html",
       template: "./view/common.html",
       inject: "body",
-      chunks:["vendors","list"],
-      title: "list"
+      chunks:["vendors","search"],
+      title: "search"
     }),
     //release页面你的配置
     new HtmlWebpackPlugin({
@@ -104,7 +104,7 @@ module.exports = {
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: "vendors",                                      // 将公共模块提取，生成名为vendors的chunk
-      chunks: ["index","list","release","register","user"], //提取哪些模块共有的部分
+      chunks: ["index","search","release","register","user"], //提取哪些模块共有的部分
       minChunks: 5                                          // 提取至少3个模块共有的部分
     }),
     new ExtractTextPlugin('css/[name].css'),
